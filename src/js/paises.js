@@ -21,8 +21,8 @@ function fetchCountryData(country){
     .then(data => {
         console.log(data);
         let nativeNameCommon;
-        let isIndependent = data[0].independent;
-        let population = data[0].population;
+        let isIndependent = data[0].independent ? "Sim" : "Não";
+        let population = data[0].population.toLocaleString('pt-BR');
         let continent = data[0].continents;
         let currencyName;
         let capital = data[0].capital[0];
