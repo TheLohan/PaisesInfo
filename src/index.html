@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Info dos países</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body >
+        <header>
+            <h1>Info dos países</h1>
+            <h5>Feito por Lohan Alexandre utilizando REST COUNTRIES</h5>
+        </header>
+
+        <div id="search" class="container">
+            <input type="text" name="" id="inputCountry">
+            <button id="sendCountry" type="submit">Obter Informações</button>
+        </div>
+
+        <div id="info" class="container">
+            <div id="infoName">
+                <p>Nome do país: </p>
+                <p>É independente: </p>
+                <p>População:</p>
+                <p>Continente:</p>
+                <p>Moeda:</p>
+                <p>Capital:</p>
+            </div>
+            <div id="infoValue">
+                <p id="nome_pais_portugues"></p>
+                <p id="independente"></p>
+                <p id="populacao"></p>
+                <p id="continente"></p>
+                <p id="moeda"></p>
+                <p id="capital"></p>
+            </div>
+        </div>
+        <script src="js/paises.js"></script>
+    </body>
+
+</html>
